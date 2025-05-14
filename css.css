@@ -17,11 +17,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-  
-html {
-  transform: scale(1.1); 
-  transform-origin: top left;
-}
 
   /* Header */
   header {
