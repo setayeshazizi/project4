@@ -6,11 +6,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-html {
-  transform: scale(1.1); 
-  transform-origin: top left;
-}
-
 /* Body */
 body {
   background-color: #121212;
