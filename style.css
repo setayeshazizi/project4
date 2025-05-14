@@ -1,0 +1,286 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  transform: scale(1.1); 
+  transform-origin: top left;
+}
+
+/* Body */
+body {
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #7a4c9c;
+  padding: 20px 0;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.6;
+  color:  #fc8ceb;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f3a9e8;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Homepage Section */
+#home {
+  background-color: #1d1d1d;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#home .intro {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#home h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Search Container */
+#home .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#home .search-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+#home .search-box input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #5a2a72;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(102, 101, 101, 0.199);
+  transition: 0.3s;
+}
+
+#home .search-box input:focus {
+  outline: none;
+  border-color: #ff9df7;
+  box-shadow: 0 0 12px rgba(255, 157, 247, 0.6);
+}
+
+/* Search suggestions */
+#home .search-suggestions ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+#home .search-suggestions li {
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #333;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#home .search-suggestions li:hover {
+  background-color: #7a4c9c;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Featured Proverbs */
+#home .featured-proverbs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.proverb-card {
+  background-color: #5a2a72;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+#border{
+  border: 1px solid #8741aa;
+}
+
+.proverb-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(140, 73, 173, 0.6);
+}
+
+.proverb-card .original {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.proverb-card .english {
+  font-family:'DM Serif Display', serif ;
+  font-size: 1.1rem;
+  color:#fcc2f7;
+  margin-top: 10px;
+}
+
+.english2{
+  font-family:'DM Serif Display', serif ;
+  font-size: 1.2rem;
+  color: rgb(255, 243, 243);
+  margin-top: 10px;
+}
+
+.proverb-card .meaning {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #bbb;
+}
+
+/*footwr*/
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content{
+  margin-top: 50px;
+}
+
+.footer .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a:hover {
+  border-color: #4d1744; 
+  color: #e0b9db;         
+  transition: all 0.3s ease;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 20px;
+  opacity: 0.6;
+  color:  #fc8ceb;
+}
+
